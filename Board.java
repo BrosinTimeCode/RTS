@@ -23,4 +23,16 @@ public class Board extends BaseBoard {
         }
         return builder.toString();
     }
+    public boolean validUnit(int row, int column) {
+        // TODO: Add Junit Test Cases
+        if(row > board.length || column > board[0].length) {
+            return false;
+        }
+        else if(board[row][column] == null) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
 }

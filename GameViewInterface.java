@@ -3,5 +3,7 @@ public interface GameViewInterface {
     void displayBoard(BaseBoard board);
     // Method to refresh the state of the board
     void refreshBoard(Board board);
+    // Displays help prompt
+    void displayHelp();
 
 }
